@@ -18,6 +18,9 @@ export default function Profile(props){
                     <td>Course: {props.st.course}</td>
                 </tr>
                 <tr>
+                    <td>Gender: {props.st.gender}</td>
+                </tr>
+                <tr>
                     <td>Address: {props.st.city+","+props.st.country}</td>
                 </tr>
                 <tr>
