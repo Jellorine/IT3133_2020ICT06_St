@@ -4,27 +4,27 @@ export default function Profile(props){
             <table>
                 <tr>
                     <td rowSpan={7}>
-                        <img className="profile" src={require("../assets/profilepic/"+props.st.profilePic)} alt="profile pic"/>
+                        <img className="profile" src={require("../assets/profilepic/"+props.stu.profilePic)} alt="profile pic"/>
                     </td>
-                    <td>ID: {props.st.studentId}</td>
+                    <td>ID: {props.stu.studentId}</td>
                 </tr>
                 <tr>
-                    <td>Full Name: {props.st.firstName+" "+lastName}</td>
+                    <td>Full Name: {props.stu.firstName+" "+props.stu.lastName}</td>
                 </tr>
                 <tr>
-                    <td>Age: {props.st.age}</td>
+                    <td>Age: {props.stu.age}</td>
                 </tr>
                 <tr>
-                    <td>Course: {props.st.course}</td>
+                    <td>Course: {props.stu.course}</td>
                 </tr>
                 <tr>
-                    <td>Gender: {props.st.gender}</td>
+                    <td>Gender: {props.stu.gender}</td>
                 </tr>
                 <tr>
-                    <td>Address: {props.st.city+","+props.st.country}</td>
+                    <td>Address: {props.stu.city+","+props.stu.country}</td>
                 </tr>
                 <tr>
-                    <td>Skills: {props.st.skills.map(sk=>sk+=", ")}</td>
+                    <td>Skills: {props.stu.skills.map(sk=>sk+=", ")}</td>
                 </tr>
             </table>
         </>
