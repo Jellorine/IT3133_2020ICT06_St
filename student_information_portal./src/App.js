@@ -3,9 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      
-      <People></People>
+    <div className="App">
+      <h1>Student Information Portal</h1>
+      <hr/>
+      <table>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
     </div>
   );
 }
