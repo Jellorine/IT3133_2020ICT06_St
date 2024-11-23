@@ -21,7 +21,7 @@ export default function Profile(props){
                     <td>Gender: {props.stu.gender}</td>
                 </tr>
                 <tr>
-                    <td>Address: {props.stu.city+","+props.stu.country}</td>
+                    <td>Address: {props.stu.address.city+","+props.stu.address.country}</td>
                 </tr>
                 <tr>
                     <td>Skills: {props.stu.skills.map(sk=>sk+=", ")}</td>
